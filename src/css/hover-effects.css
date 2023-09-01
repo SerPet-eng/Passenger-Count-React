@@ -1,0 +1,13 @@
+@import url('./styles.css');
+
+.hero--increment-btn,
+.hero--save-btn,
+.hero--reset-btn {
+    transition: .3s ease;
+}
+
+.hero--increment-btn:hover,
+.hero--save-btn:hover,
+.hero--reset-btn:hover {
+    background-color: red;
+}
