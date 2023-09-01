@@ -10,4 +10,11 @@
 .hero--save-btn:hover,
 .hero--reset-btn:hover {
     background-color: red;
+    color: #FFFFFF;
+}
+
+.hero--increment-btn:active,
+.hero--save-btn:active,
+.hero--reset-btn:active {
+    background-color: yellow;
 }
