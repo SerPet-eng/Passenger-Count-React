@@ -22,14 +22,14 @@ export default function Hero() {
     return (
         <>
             <div className="hero">
-                <h1 className="hero--title">Passenger Count</h1>
+                <h1 className="hero--title">Passenger <span className="red">Count</span></h1>
                 <h3 className="hero--count">{count}</h3>
                 <div className="buttons">
                     <button onClick={increment} className="hero--increment-btn">INCREMENT</button>
                     <button onClick={save} className="hero--save-btn">SAVE</button>
                     <button onClick={reset} className="hero--reset-btn">RESET</button>
                 </div>
-                <p>Previous Count: {previousCounts.join(' - ')}</p>
+                <p className="hero--text">Previous Count: {previousCounts.join(' - ')}</p>
             </div>
         </>
     )

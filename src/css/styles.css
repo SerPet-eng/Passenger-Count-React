@@ -44,24 +44,29 @@
     --fs-900: clamp(2.8rem, 1rem + 9.01vw, 7.42rem);
 }
 
+.red {
+    color: red;
+}
+
 body {
     font-family: 'Exo 2',Arial, Helvetica, sans-serif;
     background-color: #eaeaea;
 }
 
 .main {
-    border: 5px solid blue;
+    border-radius: 10px;
     margin: 50px auto;
+    max-width: 800px;
+    padding: 2rem 3rem;
 }
 
 .container {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 1em;
     display: flex;
     justify-content: space-evenly;  
     border-radius: 10px;
-    border: 1px solid red;
 
     background-image: url('../images/train-station-blur.jpg');
     background-size: cover;
@@ -86,7 +91,6 @@ body {
 }
 
 .buttons {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
 }
@@ -95,14 +99,28 @@ body {
     margin-bottom: 5px;
 }
 
+.hero {
+    backdrop-filter: blur(5px);
+    padding: 1em;
+}
+
+.hero--title, .hero--count, .hero--text {
+    color: var(--clr-primary-900);
+    text-shadow: 0 0 3px black;
+}
+
 .hero--title {
     margin: 0;
     font-size: var(--fs-600);
 }
 
 .hero--count {
-    margin: 0;
-    font-size: var(--fs-400);
+    margin: 5px 0 5px 0;
+    font-size: var(--fs-600);
+}
+
+.hero--text {
+    font-size: var(--fs-300);
 }
 
 .hero--increment-btn, .hero--save-btn, .hero--reset-btn {
